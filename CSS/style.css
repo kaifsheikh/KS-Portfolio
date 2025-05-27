@@ -535,6 +535,7 @@ span {
   background: var(--main-color);
 }
 
+
 /* Coding Skills bar styling
  */
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
@@ -544,17 +545,27 @@ span {
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
   /* CSS */
-  width: 70%;
+  width: 90%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
   /* JS */
-  width: 60%;
+  width: 70%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
   /* PHP */
   width: 60%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+  /* PHP */
+  width: 30%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+  /* PHP */
+  width: 70%;
 }
 
 /* Professional Skills bar styling */
