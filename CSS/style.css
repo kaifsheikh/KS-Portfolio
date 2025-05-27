@@ -570,15 +570,6 @@ span {
 
 /* Professional Skills bar styling */
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-  /* Web Design */
-  width: 70%;
-}
-
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-  /* Web Development */
-  width: 80%;
-}
 
 /* Contact Section Styling */
 .contact {
