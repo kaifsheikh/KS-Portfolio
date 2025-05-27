@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project View</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #112e42;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .image-wrapper {
+            text-align: center;
+        }
+
+        .product-image {
+            width: 400px;
+            /* ✅ Increased from 250/300 to 400 */
+            height: auto;
+            border-radius: 12px;
+            cursor: zoom-in;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            box-shadow: 0 0 20px #fff;
+            border-radius: 10px;
+            cursor: zoom-out;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .image-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Food Order Summery</h2>
+        <div class="image-row">
+            <div style="text-align:center">
+                <img src="./Images/food order summery.PNG" alt="Image 1" class="product-image" onclick="openModal(this.src)">
+                <p style="color: white;">Food Order</p>
+            </div>
+            <div style="text-align:center">
+                <img src="./Images/order summery.PNG" alt="Image 2" class="product-image" onclick="openModal(this.src)">
+                <p style="color: white;">Summery Bill</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="zoomModal" onclick="closeModal()">
+        <span class="modal-close" onclick="closeModal()">×</span>
+        <img id="modalImg" src="">
+    </div>
+
+    <script>
+        function openModal(src) {
+            document.getElementById('modalImg').src = src;
+            document.getElementById('zoomModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('zoomModal').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>

@@ -22,8 +22,7 @@
   border: 0.2rem solid var(--main-color);
   border-radius: 1rem;
   padding: 2.5rem;
-  width: 36rem;
-  height: 32rem;
+  width: 30rem;
   box-shadow: 0 0 1rem rgba(0, 171, 240, 0.3);
   transition: transform 0.3s ease;
   display: flex;
@@ -34,7 +33,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Dark overlay for text readability */
 .project-card::before {
   content: '';
   position: absolute;
@@ -43,7 +41,6 @@
   z-index: 0;
 }
 
-/* Ensure content is above overlay */
 .project-card * {
   position: relative;
   z-index: 1;
