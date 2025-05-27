@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./CSS/style.css">
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaif Sheikh Porfolio</title>
+    <!-- FOnt CDN -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/portfolio.css">
+
+    <!-- Box-Icon CND -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section Design -->
+    <header class="header">
+      <a href="#" class="logo"
+        >Kaif. <span class="animate" style="--i: 1"></span
+      ></a>
+
+      <div class="bx bx-menu" id="menu-icon">
+        <span class="animate" style="--i: 2"></span>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="portfolio.html">Portfolio</a>
+
+        <span class="active-nav"></span>
+        <span class="animate" style="--i: 2"></span>
+      </nav>
+    </header>
+
+<!-- Projects Section -->
+
+<section class="projects" id="projects">
+  <h2 class="heading">My <span>Projects</span></h2>
+  <div class="project-container">
+
+    <div class="project-card" style="background-image: url('images/weather.jpg');">
+      <h3>Weather App</h3>
+      <p>A weather forecasting app built using HTML, CSS & JavaScript.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+    <div class="project-card" style="background-image: url('images/todo.jpg');">
+      <h3>To-Do List</h3>
+      <p>Simple task management app with local storage feature.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+    <div class="project-card" style="background-image: url('images/portfolio.jpg');">
+      <h3>Portfolio Website</h3>
+      <p>Personal portfolio website showcasing my skills and work.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Footer Section Design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 By kaif / All Rights Reserved</p>
+
+        <span class="animate scroll" style="--i: 1"></span>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+
+        <span class="animate scroll" style="--i: 3"></span>
+      </div>
+    </footer>
+
+  </body>
 </html>
