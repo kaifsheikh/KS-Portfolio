@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['name'])) {
+    // Agar session nahi hai to wapas login page pe bhej do
+    $_SESSION['alerts'][] = [
+        'type' => 'error',
+        'message' => 'Please login to access this page.'
+    ];
+
+    header('Location: index.php'); // ✅ Correct destination
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

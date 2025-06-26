@@ -172,7 +172,8 @@ section h1{
 .form-box p{
     font-size: 14.5px;
     text-align: center;
-    margin: 25px 0 10px;
+    /* margin: 25px 0 10px; */
+    margin: 10px;
 }
 
 .form-box p a{

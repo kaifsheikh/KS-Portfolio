@@ -82,6 +82,7 @@
                     <button type="submit" name="login_btn" class="btn">Login</button>
                     <!-- Register Button -->
                     <p>Don't Have an Account <a href="" class="register-link">Register</a></p>
+                    <p>Recover Password <a href="" class="register-link">Forget Password</a></p>
                 </form>
             </div>
 
